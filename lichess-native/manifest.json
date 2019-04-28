@@ -1,0 +1,7 @@
+{
+  "name": "lichess_bot",
+  "description": "Example host for native messaging",
+  "path": "C:\\Works\\lichess-solver\\lichess-native\\run.bat",
+  "type": "stdio",
+  "allowed_extensions": [ "lichess_webapp@pdulvp.org" ]
+}

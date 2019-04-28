@@ -1,0 +1,32 @@
+{
+ "browser_specific_settings": {
+    "gecko": {
+      "id": "lichess_webapp@pdulvp.org"
+    }
+  },
+
+  "manifest_version": 2,
+  "name": "Lichess webapp",
+  "version": "1.0",
+  "description": "Adds a solid red border to all webpages matching mozilla.org.",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://lichess.org/*"],
+      "js": ["bot.js"]
+    }
+  ], 
+  
+  "background": {
+	  "scripts": ["background-script.js"]
+	}, 
+	
+  "permissions": [
+    "nativeMessaging"
+  ]
+
+}
